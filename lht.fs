@@ -34,7 +34,7 @@ let main argv =
     let aStudent = { Name = "lihuitao"; Age = 42 }
     let bStudent = { Name = "liyan"; Age = 37 }
     printfn "%s" aStudent.Name
-    let aDog = new Dog()
+    let aDog = Dog()
     (aDog :> ILifeForm).Speak()
     0
 

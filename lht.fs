@@ -1,3 +1,13 @@
+[<AbstractClass>]
+type Animal() = 
+    abstract Work : unit -> unit
+    member x.Fight() = 
+        printfn "for Alias!"
+type Sheep() = 
+    inherit Animal() with
+        member x.Work() = 
+            printfn "I'm work!"
+
 type ILifeForm =
     abstract Speak : unit -> unit
     abstract Eat : unit -> unit 
